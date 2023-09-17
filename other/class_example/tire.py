@@ -32,3 +32,22 @@ class Tire:
         total_diameter = side_wall_inches * 2 + self.diameter
         return round(total_diameter * math.pi, 1)
 
+class SnowTire(Tire):
+
+    def __init__(self, tire_type, width, ration, diameter,chain_thickness, brand='',construction='R'):
+        super().__init__(tire_type, width, ration, diameter, brand, construction)
+        self.chain_thickness = chain_thickness
+
+    def circumference(self):
+        """
+        The circumference of a tire w/ snow chains in inches
+
+        >>> tire = SnowTire('P', 205, 65, 15, 2)
+        >>> tire.circumference()
+        92.7
+        """
+        return (f"{self.tire_type}{self.width}/{self.ratio}"
+                + f"{self.construction}{self.diameter}")
+    
+    def _side_wall_inches(self):
+        return (self.width * (self.ratio / 100 )) / 25.4
