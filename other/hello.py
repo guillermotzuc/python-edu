@@ -5,7 +5,7 @@
 
 # while
 from turtle import color
-
+import sys
 
 count = 1
 while count <= 4:
@@ -53,3 +53,21 @@ def can_drive(age,driving_age=16):
 
 can_drive(15)
 can_drive(15, 14)
+
+# exception
+file_name = "recipes.txt"
+try:
+    my_file = open(file_name, 'x')
+    my_file.write('Meatballs\n')
+    my_file.close()
+except FileExistsError as err:
+    print(f"The {file_name} file already exists")
+    #sys.exit(1)
+except:
+    print("Unable to write to the file")
+    #sys.exit(1)
+else:
+    print(f"Wrote {file_name}")
+finally:
+     print("Execution completed")
+
