@@ -38,7 +38,7 @@ class DataClass(type):
         for key, value in annotations.items():
             if key in defaults.keys():
                 #"release_date:datetime.date=datetime.date.today()"
-                default_args.append(f"{key}:{value.__name}=repr(defaults[key])")
+                default_args.append(f"{key}:{value.__name__}=repr(defaults[key])")
             else:
                 args.append(f"{key}:{value.__name__}")
             
@@ -47,7 +47,8 @@ class DataClass(type):
         args = ", ".join(args + default_args)
         body = "\n ".join(body_lines)
 
-        text = f"def {name({args})}->{return_type}\n {body}"
+        text = f"def {name}({args})->{return_type}\t\n {body}"
+        print(text)
         exec(text)
         return locals()[name]
 
