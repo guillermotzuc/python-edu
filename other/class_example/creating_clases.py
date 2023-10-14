@@ -19,3 +19,8 @@ class Car:
         else:
             return 0
         
+if __name__ == "__main__":
+    tires = []
+    tires.append(Tire('P', 205, 65,15))
+    car = Car("Toyota", tires)
+    print(car.wheel_circumference())
