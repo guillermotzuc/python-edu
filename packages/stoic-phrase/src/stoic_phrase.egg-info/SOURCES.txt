@@ -1,0 +1,10 @@
+README.rst
+setup.py
+src/phraseReader/PhraseReader.py
+src/phraseReader/__init__.py
+src/phraseReader/cli.py
+src/stoic_phrase.egg-info/PKG-INFO
+src/stoic_phrase.egg-info/SOURCES.txt
+src/stoic_phrase.egg-info/dependency_links.txt
+src/stoic_phrase.egg-info/entry_points.txt
+src/stoic_phrase.egg-info/top_level.txt
