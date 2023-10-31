@@ -8,7 +8,7 @@ with open("README.rst", encoding="UTF-8") as f:
 setup(
     name="stoic-phrase",
     version="1.0.0",
-    description="Get a stoic phrase for you day.",
+    description="Get a stoic phrase for youR day.",
     long_description=readme,
     author="Guillermo Ivan Tzuc Cancino",
     author_email="guillermo.tzuc@gmail.com",

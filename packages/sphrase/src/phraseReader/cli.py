@@ -1,8 +1,8 @@
 import argparse
 def create_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--path', help='the path to the export file')
-    parser.add_argument('--format', default='json', choices=['json', 'csv'], type=str.lower)
+    # parser.add_argument('--path', help='the path to the export file')
+    # parser.add_argument('--format', default='json', choices=['json', 'csv'], type=str.lower)
     return parser
 
 # Inside here, we're going simply import some things.
@@ -24,6 +24,6 @@ def main():
     # This reads in the user information (from the pwd module
     # that we used in users.py).
     stoicPhrase = phraseReader.fetch_phrase()
-    print(stoicPhrase)
+    print(stoicPhrase['phrase'])
     file = sys.stdout
     

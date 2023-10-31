@@ -3,6 +3,7 @@ setup.py
 src/phraseReader/PhraseReader.py
 src/phraseReader/__init__.py
 src/phraseReader/cli.py
+src/phraseReader/config.py
 src/stoic_phrase.egg-info/PKG-INFO
 src/stoic_phrase.egg-info/SOURCES.txt
 src/stoic_phrase.egg-info/dependency_links.txt
