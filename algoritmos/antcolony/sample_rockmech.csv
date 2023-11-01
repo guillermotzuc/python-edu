@@ -1,0 +1,16 @@
+Possible Path,Next Possible Path,Distance,UCS
+AB,"['BC', 'BD']",100,80
+AC,"['CD', 'CE']",80,83
+BC,"['CD', 'CE']",155,83
+BD,"['DE', 'DF']",125,185
+CD,"['DE', 'DF']",95,185
+CE,"['EF', 'EG']",125,185
+DE,"['EF', 'EG']",130,185
+DF,"['FG', 'FH']",120,70
+EF,"['FG', 'FH']",195,70
+EG,['GI'],130,50
+FG,['GI'],175,50
+FH,"['HG', 'HI']",120,60
+GI,[],110,60
+HG,['GI'],150,50
+HI,[],80,70
