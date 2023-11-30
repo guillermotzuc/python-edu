@@ -9,6 +9,17 @@
 #
 class RotateArray:
 
+    def rotate2(self, nums, k) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        array_length = len(nums) - 1
+        for i in range(target):
+            array = [array[array_length]] + array
+            array.pop()
+        nums[:] = array
+        print(nums)
+
     def rotate(self, array, target):
         """
 
@@ -38,4 +49,4 @@ if __name__ == "__main__":
     rotate_array = RotateArray()
     array = [1,2,3,4,5,6,7]
     target = 3
-    print(rotate_array.rotate(array, target))
+    print(rotate_array.rotate2(array, target))
